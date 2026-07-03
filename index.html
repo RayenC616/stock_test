@@ -233,6 +233,7 @@
   }
   .score-name{width:70px; color:var(--sub); font-weight:600; flex-shrink:0;}
   .score-track{
+    display:inline-block;
     flex:1;
     height:8px;
     background:var(--border);
@@ -240,10 +241,13 @@
     overflow:hidden;
   }
   .score-fill{
+    display:inline-block;
     height:100%;
+    width:0%;
     background:var(--accent);
     border-radius:6px;
     transition:width .6s ease;
+    vertical-align:top;
   }
   .score-fill.dim{background:#c7cee6;}
   .score-val{width:24px; text-align:right; color:var(--sub); font-weight:700;}
